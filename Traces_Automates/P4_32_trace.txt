@@ -1,0 +1,202 @@
+C:\Users\abdel\AppData\Local\Programs\Python\Python39\python.exe "C:\Users\abdel\Downloads\Projet_Automate_PP1_G4 2\Projet_Automate_PP1_G4\main.py" 
+
+============ Gestion des Automates ============
+
+Que voulez-vous faire ?
+	-1 Lire un nouvel automate d'un fichier 
+	-2 Afficher l'automate courant
+	-3 Standardisation
+	-4 Déterminisation Completion (DC)
+	-5 DC minimal
+	-6 DC complémentaire 
+	-7 Vérifier si l'automate reconnait des mots (nécessite l'automate DC)
+	-8 Quitter
+
+Votre choix : 
+Option non valide, veuillez réessayer
+Votre choix : 1
+
+Veuillez entrer le numéro de l'automate (max 44) : 32
+
+Lecture réussie !!
+
+Que voulez-vous faire ?
+	-1 Lire un nouvel automate d'un fichier 
+	-2 Afficher l'automate courant
+	-3 Standardisation
+	-4 Déterminisation Completion (DC)
+	-5 DC minimal
+	-6 DC complémentaire 
+	-7 Vérifier si l'automate reconnait des mots (nécessite l'automate DC)
+	-8 Quitter
+
+Votre choix : 2
+--------------------------------------------------------------------------------------------
+|              |                  |        b         |        a         |        c         |
+--------------------------------------------------------------------------------------------
+|   E    |   S    |        A         |        F         |      7.8,D       | 9.21,19.18.20.21 |
+|        |   S    |        21        |                  |                  |                  |
+|        |        |   1.2.3.5.8.6    |     4.3.5.8      |       7.8        |       9.21       |
+|        |        |     2.3.5.8      |     4.3.5.8      |                  |       9.21       |
+|        |        |        6         |                  |       7.8        |                  |
+|        |        |        3         |     4.3.5.8      |                  |                  |
+|        |        |       5.8        |                  |                  |       9.21       |
+|        |        |     4.3.5.8      |     4.3.5.8      |                  |       9.21       |
+|        |        |        8         |                  |                  |       9.21       |
+|        |        |       7.8        |                  |                  |       9.21       |
+|        |   S    |       9.21       |                  |                  |                  |
+|        |   S    |        B         |  16.17.18.20.21  |        D         |   19.18.20.21    |
+|        |   S    |        C         |                  |        D         |   19.18.20.21    |
+|        |        |        15        |  16.17.18.20.21  |                  |                  |
+|        |        |        12        |                  |        D         |                  |
+|        |   S    |  14.17.18.20.21  |                  |                  |   19.18.20.21    |
+|        |   S    |        D         |                  |        D         |   19.18.20.21    |
+|        |   S    |   17.18.20.21    |                  |                  |   19.18.20.21    |
+|        |   S    |  16.17.18.20.21  |                  |                  |   19.18.20.21    |
+|        |        |        18        |                  |                  |   19.18.20.21    |
+|        |   S    |      20.21       |                  |                  |                  |
+|        |   S    |   19.18.20.21    |                  |                  |   19.18.20.21    |
+--------------------------------------------------------------------------------------------
+
+Correspondances:
+A = 0.1.2.3.5.8.6.10.11.12.14.17.18.20.21.15
+B = 10.11.12.14.17.18.20.21.15
+C = 11.12.14.17.18.20.21
+D = 13.12.14.17.18.20.21
+F = 4.3.5.8,16.17.18.20.21
+Que voulez-vous faire ?
+	-1 Lire un nouvel automate d'un fichier 
+	-2 Afficher l'automate courant
+	-3 Standardisation
+	-4 Déterminisation Completion (DC)
+	-5 DC minimal
+	-6 DC complémentaire 
+	-7 Vérifier si l'automate reconnait des mots (nécessite l'automate DC)
+	-8 Quitter
+
+Votre choix : 4
+Que voulez-vous faire ?
+	-1 Vérifier si l'automate d'origine est déterministe
+	-2 Vérifier si l'automate d'origine est complet
+	-3 Calculer et afficher l'automate déterministe complet (DC) équivalent
+	-4 Retour au menu précédent
+
+Votre choix : 3
+--------------------------------------------------------------------------------------------
+|              |                  |        b         |        a         |        c         |
+--------------------------------------------------------------------------------------------
+|   E     S    |        A         |        B         |        C         | 9.21-19.18.20.21 |
+|         S    |        B         |     4.3.5.8      |        P         | 9.21-19.18.20.21 |
+|         S    |        C         |        P         |        D         | 9.21-19.18.20.21 |
+|         S    | 9.21-19.18.20.21 |        P         |        P         |   19.18.20.21    |
+|              |     4.3.5.8      |     4.3.5.8      |        P         |       9.21       |
+|         S    |        D         |        P         |        D         |   19.18.20.21    |
+|         S    |   19.18.20.21    |        P         |        P         |   19.18.20.21    |
+|         S    |       9.21       |        P         |        P         |        P         |
+|              |        P         |        P         |        P         |        P         |
+--------------------------------------------------------------------------------------------
+
+Correspondances:
+A = 0.1.2.3.5.8.6.10.11.12.14.17.18.20.21.15
+B = 4.3.5.8-16.17.18.20.21
+C = 7.8-13.12.14.17.18.20.21
+D = 13.12.14.17.18.20.21
+Que voulez-vous faire ?
+	-1 Vérifier si l'automate d'origine est déterministe
+	-2 Vérifier si l'automate d'origine est complet
+	-3 Calculer et afficher l'automate déterministe complet (DC) équivalent
+	-4 Retour au menu précédent
+
+Votre choix : 4
+Que voulez-vous faire ?
+	-1 Lire un nouvel automate d'un fichier 
+	-2 Afficher l'automate courant
+	-3 Standardisation
+	-4 Déterminisation Completion (DC)
+	-5 DC minimal
+	-6 DC complémentaire 
+	-7 Vérifier si l'automate reconnait des mots (nécessite l'automate DC)
+	-8 Quitter
+
+Votre choix : 5
+Que voulez-vous faire ?
+	-1 Calculer et afficher l'automate DC minimal 
+	-2 Retour au menu précédent
+
+Votre choix : 1
+L'automate DC n'était pas minimal
+--------------------------------------------------------------------------------------------
+|              |                  |        b         |        a         |        c         |
+--------------------------------------------------------------------------------------------
+|   E     S    |        A         |        B         |        D         |        C         |
+|         S    |        B         |     4.3.5.8      |        P         |        C         |
+|         S    |        C         |        P         |        P         |        C         |
+|         S    |        D         |        P         |        D         |        C         |
+|         S    |       9.21       |        P         |        P         |        P         |
+|              |     4.3.5.8      |     4.3.5.8      |        P         |       9.21       |
+|              |        P         |        P         |        P         |        P         |
+--------------------------------------------------------------------------------------------
+
+Correspondances:
+A = 0.1.2.3.5.8.6.10.11.12.14.17.18.20.21.15
+B = 4.3.5.8-16.17.18.20.21
+C = 9.21-19.18.20.21_19.18.20.21
+D = 7.8-13.12.14.17.18.20.21_13.12.14.17.18.20.21
+Que voulez-vous faire ?
+	-1 Calculer et afficher l'automate DC minimal 
+	-2 Retour au menu précédent
+
+Votre choix : 2
+Que voulez-vous faire ?
+	-1 Lire un nouvel automate d'un fichier 
+	-2 Afficher l'automate courant
+	-3 Standardisation
+	-4 Déterminisation Completion (DC)
+	-5 DC minimal
+	-6 DC complémentaire 
+	-7 Vérifier si l'automate reconnait des mots (nécessite l'automate DC)
+	-8 Quitter
+
+Votre choix : 6
+Que voulez-vous faire ?
+	-1 Calculer et afficher l'automate DC complémentaire (nécessite l'automate DC) 
+	-2 Calculer et afficher l'automate DC minimal complémentaire (nécessite l'automate DC minimal) 
+	-3 Retour au menu précédent
+
+Votre choix : 2
+--------------------------------------------------------------------------------------------
+|              |                  |        b         |        a         |        c         |
+--------------------------------------------------------------------------------------------
+|   E          |        A         |        B         |        D         |        C         |
+|              |        B         |     4.3.5.8      |        P         |        C         |
+|              |        C         |        P         |        P         |        C         |
+|              |        D         |        P         |        D         |        C         |
+|              |       9.21       |        P         |        P         |        P         |
+|         S    |     4.3.5.8      |     4.3.5.8      |        P         |       9.21       |
+|         S    |        P         |        P         |        P         |        P         |
+--------------------------------------------------------------------------------------------
+
+Correspondances:
+A = 0.1.2.3.5.8.6.10.11.12.14.17.18.20.21.15
+B = 4.3.5.8-16.17.18.20.21
+C = 9.21-19.18.20.21_19.18.20.21
+D = 7.8-13.12.14.17.18.20.21_13.12.14.17.18.20.21
+Que voulez-vous faire ?
+	-1 Calculer et afficher l'automate DC complémentaire (nécessite l'automate DC) 
+	-2 Calculer et afficher l'automate DC minimal complémentaire (nécessite l'automate DC minimal) 
+	-3 Retour au menu précédent
+
+Votre choix : 3
+Que voulez-vous faire ?
+	-1 Lire un nouvel automate d'un fichier 
+	-2 Afficher l'automate courant
+	-3 Standardisation
+	-4 Déterminisation Completion (DC)
+	-5 DC minimal
+	-6 DC complémentaire 
+	-7 Vérifier si l'automate reconnait des mots (nécessite l'automate DC)
+	-8 Quitter
+
+Votre choix : 8
+
+Process finished with exit code 0

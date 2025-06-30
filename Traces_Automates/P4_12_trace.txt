@@ -1,0 +1,126 @@
+C:\Users\abdel\AppData\Local\Programs\Python\Python39\python.exe "C:\Users\abdel\Downloads\Projet_Automate_PP1_G4 2\Projet_Automate_PP1_G4\main.py" 
+
+============ Gestion des Automates ============
+
+Que voulez-vous faire ?
+	-1 Lire un nouvel automate d'un fichier 
+	-2 Afficher l'automate courant
+	-3 Standardisation
+	-4 Déterminisation Completion (DC)
+	-5 DC minimal
+	-6 DC complémentaire 
+	-7 Vérifier si l'automate reconnait des mots (nécessite l'automate DC)
+	-8 Quitter
+
+Votre choix : 1
+
+Veuillez entrer le numéro de l'automate (max 44) : 12
+
+Lecture réussie !!
+
+Que voulez-vous faire ?
+	-1 Lire un nouvel automate d'un fichier 
+	-2 Afficher l'automate courant
+	-3 Standardisation
+	-4 Déterminisation Completion (DC)
+	-5 DC minimal
+	-6 DC complémentaire 
+	-7 Vérifier si l'automate reconnait des mots (nécessite l'automate DC)
+	-8 Quitter
+
+Votre choix : 4
+Que voulez-vous faire ?
+	-1 Vérifier si l'automate d'origine est déterministe
+	-2 Vérifier si l'automate d'origine est complet
+	-3 Calculer et afficher l'automate déterministe complet (DC) équivalent
+	-4 Retour au menu précédent
+
+Votre choix : 3
+---------------------------------------------------------------------------------------------------------------
+|              |                  |        a         |        c         |        b         |        d         |
+---------------------------------------------------------------------------------------------------------------
+|   E     S    |        1         |        1         |        0         |        P         |        P         |
+|              |        0         |        P         |        P         |        0         |        1         |
+|              |        P         |        P         |        P         |        P         |        P         |
+---------------------------------------------------------------------------------------------------------------
+Que voulez-vous faire ?
+	-1 Vérifier si l'automate d'origine est déterministe
+	-2 Vérifier si l'automate d'origine est complet
+	-3 Calculer et afficher l'automate déterministe complet (DC) équivalent
+	-4 Retour au menu précédent
+
+Votre choix : 4
+Que voulez-vous faire ?
+	-1 Lire un nouvel automate d'un fichier 
+	-2 Afficher l'automate courant
+	-3 Standardisation
+	-4 Déterminisation Completion (DC)
+	-5 DC minimal
+	-6 DC complémentaire 
+	-7 Vérifier si l'automate reconnait des mots (nécessite l'automate DC)
+	-8 Quitter
+
+Votre choix : 5
+Que voulez-vous faire ?
+	-1 Calculer et afficher l'automate DC minimal 
+	-2 Retour au menu précédent
+
+Votre choix : 1
+L'automate DC était déjà minimal !
+---------------------------------------------------------------------------------------------------------------
+|              |                  |        a         |        c         |        b         |        d         |
+---------------------------------------------------------------------------------------------------------------
+|   E     S    |        1         |        1         |        0         |        P         |        P         |
+|              |        0         |        P         |        P         |        0         |        1         |
+|              |        P         |        P         |        P         |        P         |        P         |
+---------------------------------------------------------------------------------------------------------------
+Que voulez-vous faire ?
+	-1 Calculer et afficher l'automate DC minimal 
+	-2 Retour au menu précédent
+
+Votre choix : 2
+Que voulez-vous faire ?
+	-1 Lire un nouvel automate d'un fichier 
+	-2 Afficher l'automate courant
+	-3 Standardisation
+	-4 Déterminisation Completion (DC)
+	-5 DC minimal
+	-6 DC complémentaire 
+	-7 Vérifier si l'automate reconnait des mots (nécessite l'automate DC)
+	-8 Quitter
+
+Votre choix : 6
+Que voulez-vous faire ?
+	-1 Calculer et afficher l'automate DC complémentaire (nécessite l'automate DC) 
+	-2 Calculer et afficher l'automate DC minimal complémentaire (nécessite l'automate DC minimal) 
+	-3 Retour au menu précédent
+
+Votre choix : 2
+---------------------------------------------------------------------------------------------------------------
+|              |                  |        a         |        c         |        b         |        d         |
+---------------------------------------------------------------------------------------------------------------
+|   E          |        1         |        1         |        0         |        P         |        P         |
+|         S    |        0         |        P         |        P         |        0         |        1         |
+|         S    |        P         |        P         |        P         |        P         |        P         |
+---------------------------------------------------------------------------------------------------------------
+Que voulez-vous faire ?
+	-1 Calculer et afficher l'automate DC complémentaire (nécessite l'automate DC) 
+	-2 Calculer et afficher l'automate DC minimal complémentaire (nécessite l'automate DC minimal) 
+	-3 Retour au menu précédent
+
+Votre choix : 3
+Que voulez-vous faire ?
+	-1 Lire un nouvel automate d'un fichier 
+	-2 Afficher l'automate courant
+	-3 Standardisation
+	-4 Déterminisation Completion (DC)
+	-5 DC minimal
+	-6 DC complémentaire 
+	-7 Vérifier si l'automate reconnait des mots (nécessite l'automate DC)
+	-8 Quitter
+
+Votre choix : 
+Option non valide, veuillez réessayer
+Votre choix : 8
+
+Process finished with exit code 0
